@@ -1,6 +1,6 @@
 doctype html
 html
-    block  head
+    head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
@@ -8,4 +8,6 @@ html
       h1 Awesome Chat
     block content
     footer Hope you enjoy!
-    script(src="/javascripts/lib/jquery/dist/jquery.js")
+    
+    block scripts
+      script(src="/javascripts/lib/jquery/dist/jquery.js")

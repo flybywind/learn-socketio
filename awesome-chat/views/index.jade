@@ -5,3 +5,7 @@ block content
     #messages
     input#message(type=text, placeholder='Enter your message here')
     input#send(type='button', value='Send')
+
+block append scripts
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='/javascripts/chat.js')

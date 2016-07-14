@@ -26,7 +26,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port);
-require('../routes/sockets.js').initialize(server);
+require('../routes/socket.js').initialize(server);
 server.on('error', onError);
 server.on('listening', onListening);
 
